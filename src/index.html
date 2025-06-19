@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>To Do List</title>
+  <link rel="stylesheet" href="styles/index.css" />
+  <script src="script.js" type="module"></script>
+</head>
+<body>
+  <div class="todo" data-js-todo>
+    <h1 class="todo__title">To Do List</h1>
+    <form class="todo__form" data-js-todo-new-task-form>
+      <div class="todo__field field">
+        <label
+          class="field__label"
+          for="new-task"
+        >
+          New task
+        </label>
+        <input
+          class="field__input"
+          id="new-task"
+          placeholder=" "
+          autocomplete="off"
+          data-js-todo-new-task-input
+        />
+      </div>
+      <button class="button" type="submit">Add</button>
+    </form>
+    <form class="todo__form" data-js-todo-search-task-form>
+      <div class="todo__field field">
+        <label
+          class="field__label"
+          for="search-task"
+        >
+          Search task
+        </label>
+        <input
+          class="field__input"
+          id="search-task"
+          placeholder=" "
+          autocomplete="off"
+          type="search"
+          data-js-todo-search-task-input
+        />
+      </div>
+    </form>
+    <div class="todo__info">
+      <div class="todo__total-tasks">
+        Total tasks: <span data-js-todo-total-tasks>0</span>
+      </div>
+      <button
+        class="todo__delete-all-button"
+        type="button"
+        data-js-todo-delete-all-button
+      >
+        Delete all
+      </button>
+    </div>
+    <ul class="todo__list" data-js-todo-list>
+      <li class="todo__item todo-item">
+        <input
+          class="todo-item__checkbox"
+          id="todo-1"
+          type="checkbox"
+        />
+        <label
+          class="todo-item__label"
+          for="todo-1"
+        >
+          Todo 1
+        </label>
+        <button
+          class="todo-item__delete-button"
+          type="button"
+          aria-label="Delete"
+          title="Delete"
+        >
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 5L5 15M5 5L15 15" stroke="#757575" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </li>
+      <li class="todo__item todo-item">
+        <input
+          class="todo-item__checkbox"
+          id="todo-1"
+          type="checkbox"
+        />
+        <label
+          class="todo-item__label"
+          for="todo-1"
+        >
+          Todo 1
+        </label>
+        <button
+          class="todo-item__delete-button"
+          type="button"
+          aria-label="Delete"
+          title="Delete"
+        >
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 5L5 15M5 5L15 15" stroke="#757575" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </li>
+    </ul>
+    <div class="todo__empty-message" data-js-todo-empty-message></div>
+  </div>
+</body>
+</html>
