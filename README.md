@@ -47,4 +47,5 @@ git clone git@github.com:aleksanderlamkov/todo-vanilla.git
 Подпишись, чтобы не пропустить:
 
 👉 [YouTube-канал Александр Ламков — Friendly Frontend](https://www.youtube.com/@AleksanderLamkov)
+
 👉 [Telegram-канал](https://t.me/AleksanderLamkov)
